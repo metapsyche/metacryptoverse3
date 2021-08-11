@@ -6,11 +6,15 @@ import { Metaverses } from './Metaverses';
 
 import CheckboxWithLabel from './checkboxwithlabel';
 
+import Counter from './Counter';
+
 function Home() {
   return (
     <div className="Home">
+      <Counter/>
       <Metaverses />
       <CheckboxWithLabel label="yea"/>
+
     </div>
   );
 }

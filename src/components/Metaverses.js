@@ -87,15 +87,15 @@ class Metaverses extends Component {
  
                 {
                     metaverses.map((metaverse) => (
-                        <Row>
-                            <p key={metaverse.name}>
-                                <span class="fieldname">Name:</span> <b>{metaverse.name}</b>
+                        <Row key={metaverse.name}>
+                            <p>
+                                <span className="fieldname">Name:</span> <b>{metaverse.name}</b>
                             </p>
                             <p>
-                                <span class="fieldname">Website:</span> <a target="_blank" href={metaverse.website}>{metaverse.website}</a>
+                                <span className="fieldname">Website:</span> <a target="_blank" href={metaverse.website}>{metaverse.website}</a>
                             </p>
                             <p>
-                                <span class="fieldname">Description:</span> {metaverse.description}
+                                <span className="fieldname">Description:</span> {metaverse.description}
                             </p>
                         </Row>
                     ))
